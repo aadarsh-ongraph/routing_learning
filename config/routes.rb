@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   # root "application#hello"
-  get 'numbers/odd/:number', to: 'numbers#odd', as: 'odd_number'
-  get 'numbers/even/:number', to: 'numbers#even', as: 'even_number'
+  
+  # get 'numbers/odd/:number', to: 'numbers#odd', as: 'odd_number'
+  # get 'numbers/even/:number', to: 'numbers#even', as: 'even_number'
+
+ get '/form', to: 'forms#new'
+  #  get '/form', to: 'forms#create'
+  post '/form/submit', to: 'forms#create'
 end
