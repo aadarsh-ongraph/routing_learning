@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guess The Number Game</title>
+  <%= stylesheet_link_tag 'game', media: 'all' %>
+</head>
+
+<body>
+  <h1>Guess The Number Game</h1>
+  
+  <p>Guess a number between 1 and 100:</p>
+
+  <%= form_tag game_result_path do %>
+    <%= text_field_tag :guessed_number %>
+    <%= hidden_field_tag :random_number, @random_number %>
+    <%= submit_tag "Guess" %>
+  <% end %>
+
+</body>
+
+</html>
