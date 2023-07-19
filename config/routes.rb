@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'fruits/ordered_list'
-  get 'fruits/unordered_list'
+  # get 'customers/list'
+  # get 'fruits/ordered_list'
+  # get 'fruits/unordered_list'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -17,8 +18,10 @@ Rails.application.routes.draw do
   # get '/numbers', to: 'numbers#index'
   # get '/check_odd_even', to: 'numbers#check_odd_even', as: 'check_odd_even_numbers'
 
-  get '/ordered_list', to: 'fruits#ordered_list'
-  get '/unordered_list', to: 'fruits#unordered_list'
-   get '/fruits', to: 'fruits#ordered_unordered_list'
+  # get '/ordered_list', to: 'fruits#ordered_list'
+  # get '/unordered_list', to: 'fruits#unordered_list'
+  #  get '/fruits', to: 'fruits#ordered_unordered_list'
+
+   get '/customer_list', to: 'customers#list'
   
 end

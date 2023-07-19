@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Customer List</title>
+   <%= stylesheet_link_tag 'customers' media: 'all'%>
+</head>
+<body>
+  <h1>Customer List</h1>
+  <table>
+<%=debugger%>
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+   
+   <tbody>
+      <% @customers.each do |customer| %>
+        <tr>
+         <td><%= customer[:name] %></td>
+          <td><%= customer[:email] %></td>
+          <td><%= customer[:age] %></td>
+          <td><%= customer[:address] %></td>
+          <td><%= customer[:phone_number] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+
+  </table>
+</body>
+</html>
