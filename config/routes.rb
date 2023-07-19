@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blog/posts'
+  get 'blog/show'
   # get 'customers/list'
   # get 'fruits/ordered_list'
   # get 'fruits/unordered_list'
@@ -22,6 +24,10 @@ Rails.application.routes.draw do
   # get '/unordered_list', to: 'fruits#unordered_list'
   #  get '/fruits', to: 'fruits#ordered_unordered_list'
 
-   get '/customer_list', to: 'customers#list'
+  #  get '/customer_list', to: 'customers#list'
+
+  #  root 'blog#posts'
+  #  get '/blog/posts', to: 'blog#posts', as: 'blog_posts'
+    get '/blog/posts/:id', to: 'blog#show', as: 'blog_post'
   
 end

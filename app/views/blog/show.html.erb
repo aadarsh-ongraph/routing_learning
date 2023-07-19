@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @post.title %></title>
+  <%= stylesheet_link_tag 'blog', media: 'all' %>
+</head>
+<body>
+  <h1><%= @post.title %></h1>
+  <div class="post-content"><%= @post.content %></div>
+  <%= link_to 'Back to Posts', blog_posts_path, class: 'back-link' %>
+</body>
+</html>

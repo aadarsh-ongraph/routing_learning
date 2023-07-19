@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    margin: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: darkslategray;
+  }
+  
+  .post
+   {
+    background-color: white;
+    border: 1px solid wheat;
+
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .post-title
+   {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .post-content {
+    margin-top: 10px;
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 20px;
+  }
+  

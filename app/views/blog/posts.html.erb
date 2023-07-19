@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Blog</title>
+  <%= stylesheet_link_tag 'blog', media: 'all' %>
+</head>
+
+<body>
+  <h1>Simple Blog</h1>
+
+  <% @posts.each do |post| %>
+
+    <div class="post">
+      <h2 class="post-title"><%= post.title %></h2>
+      <div class="post-content"><%= post.content %></div>
+      <%= link_to 'Read More', blog_post_path(post.id), class: 'back-link' %>
+
+    </div>
+  <% end %>
+</body>
+</html>
