@@ -1,7 +1,16 @@
-<h1>Order List of fruits</h1>
-<ol>
-    <% @fruits.each do |fruit|%>
-    <li><%= fruit %></li>
-    <%end%>
-</ol>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ordered List of Fruits</title>
+  <%= stylesheet_link_tag 'ordered_list', media: 'all' %>
+</head>
+<body>
+  <h1>Ordered List of Fruits:</h1>
+  <ol>
+    <% @fruits.each do |fruit| %>
+      <li><%= fruit %></li>
+    <% end %>
+  </ol>
+</body>
+</html>

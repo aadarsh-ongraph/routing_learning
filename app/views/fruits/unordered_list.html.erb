@@ -1,8 +1,15 @@
-<h1>Unordered List of fruits</h1>
-
-<ul>
-<% @fruits.each do |fruit|%>
-  <li><%= fruit %></li>
-  <%end%>
-
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unordered List of Fruits</title>
+  <%= stylesheet_link_tag 'unordered_list', media: 'all' %>
+</head>
+<body>
+  <h1>Unordered List of Fruits:</h1>
+  <ul>
+    <% @fruits.each do |fruit| %>
+      <li><%= fruit %></li>
+    <% end %>
+  </ul>
+</body>
+</html>

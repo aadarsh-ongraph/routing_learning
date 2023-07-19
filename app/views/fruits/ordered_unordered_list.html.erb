@@ -1,6 +1,6 @@
 <h1>Order List of fruits</h1>
 
-<ol>
+<ol type = 'I'>
     <% @fruits.each do |fruit|%>
     <li><%= fruit %></li>
     <%end%>
@@ -8,7 +8,7 @@
 
 <h1>Unordered List of fruits</h1>
 
-<ul>
+<ul type = 'circle'>
 <% @fruits.each do |fruit|%>
   <li><%= fruit %></li>
   <%end%>

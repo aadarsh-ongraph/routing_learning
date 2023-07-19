@@ -19,6 +19,6 @@ Rails.application.routes.draw do
 
   get '/ordered_list', to: 'fruits#ordered_list'
   get '/unordered_list', to: 'fruits#unordered_list'
-  # get '/fruits', to: 'fruits#ordered_unordered_list'
-  get '/fruits', to: 'fruits#unordered_list'
+   get '/fruits', to: 'fruits#ordered_unordered_list'
+  
 end
